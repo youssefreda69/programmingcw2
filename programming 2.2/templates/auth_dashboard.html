@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authorization Dashboard</title>
+</head>
+<body>
+    <h1> {{ welcome_message }}</h1>
+    <p>Client ID: {{ client_id }}</p>
+    <p>Client Secret: {{ client_secret }}</p>
+    <button onclick="redirectToShoppingApp()">Go to Shopping App</button>
+
+    <script>
+        function redirectToShoppingApp() {
+            window.location.href = "/redirect-to-shopping-app";
+        }
+    </script>
+</body>
+</html>
